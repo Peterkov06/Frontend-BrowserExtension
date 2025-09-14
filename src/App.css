@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root
+{
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  --color-neutral-900: hsl(227, 75%, 14%);
+  --color-neutral-800: hsl(226, 25%, 17%);
+  --color-neutral-700: hsl(225, 23%, 24%);
+  --color-neutral-600: hsl(226, 11%, 37%);
+  --color-neutral-300: hsl(0, 0%, 78%);
+  --color-neutral-200: hsl(217, 61%, 90%);
+  --color-neutral-100: hsl(0, 0%, 93%);
+  --color-neutral-0: hsl(200, 60%, 99%);
+
+  --color-red-400: hsl(3, 86%, 64%);
+  --color-red-500: hsl(3, 71%, 56%);
+  --color-red-700: hsl(3, 77%, 44%);
+
+  --color-light-gradient: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+  --color-dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+p
+{
+  font-size: 16px;
+}
+
+body
+{
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color:white
+}
+
+.mainBody
+{
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+.navbar
+{
+    background-color: var(--color-neutral-700);
+    width: 100%;
+    padding: 10px;
+    border-radius: 2vh;
+}
+
+.themeChanger
+{
+    background-color: var(--color-neutral-600);
+    width: 35px;
+    height: 35px;
+    border-radius: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.alignCenter
+{
+    align-items: center;
+}
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.filterBtn
+{
+    background-color: var(--color-neutral-700);
+    border-radius: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px 0 20px;
+}
+
+.space-between
+{
+    justify-content: space-between;
+}
+
+.filters
+{
+    gap: 5px;
+}
+
+.activeFilter
+{
+    background-color: var(--color-red-500);
+    color: var(--color-neutral-900);
+}
+
+.card
+{
+    background-color: var(--color-neutral-800);
+    border: 2px solid var(--color-neutral-600);
+    border-radius: 2vh;
+    padding: 15px;
+}
+
+.cardBtn
+{
+
+}
+
+.cardSub
+{
+    color: var(--color-neutral-300);
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px
+}
