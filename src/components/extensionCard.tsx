@@ -10,8 +10,8 @@ const ExtensionCard = (props: ExtensionDataModel) => {
     <div className="card">
       <div className="row">
         <img src={props.logo} alt="" className="cardIcon" />
-        <div className="column">
-          <h3 className="cardTitle">{props.name}</h3>
+        <div className="column m-5">
+          <h2 className="cardTitle">{props.name}</h2>
           <p className="cardSub">{props.description}</p>
         </div>
       </div>

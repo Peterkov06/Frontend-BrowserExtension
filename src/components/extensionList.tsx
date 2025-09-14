@@ -13,12 +13,12 @@ const ExtensionList = () => {
   
   return (
     <div>
-      <div className='row space-between'>
+      <div className='row space-between alignCenter breakMobile'>
           <h2>Extensions List</h2>
-          <div className='row filters alignCenter'>
+          <div className='row filters'>
               <FilterBtn txt='All'></FilterBtn>
-              <FilterBtn txt='Acive'></FilterBtn>
-              <FilterBtn txt='Incative'></FilterBtn>
+              <FilterBtn txt='Active'></FilterBtn>
+              <FilterBtn txt='Inactive'></FilterBtn>
           </div>
       </div>
       <div className='grid'>
