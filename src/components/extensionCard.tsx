@@ -1,3 +1,6 @@
+import { useContext, useEffect, useState } from "react";
+import { filteringContext } from "./extensionList";
+
 export type ExtensionDataModel = {
   logo: string;
   name: string;
@@ -6,6 +9,14 @@ export type ExtensionDataModel = {
 };
 
 const ExtensionCard = (props: ExtensionDataModel) => {
+
+  const ctx = useContext(filteringContext);
+  
+  function change()
+  {
+    ctx.modifySelected(props.name, !props.isActive)
+  }
+
   return (
     <div className="card">
       <div className="row">
@@ -17,7 +28,7 @@ const ExtensionCard = (props: ExtensionDataModel) => {
       </div>
       <div className="row space-between">
         <button className="removeBtn">Remove</button>
-        <input type="checkbox" name="" id="" checked={props.isActive} />
+        <input type="checkbox" name="" id="" checked={props.isActive} onChange={change}/>
       </div>
     </div>
   )
